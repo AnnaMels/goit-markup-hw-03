@@ -157,16 +157,24 @@ body {
     line-height: 1.3;
     text-transform: uppercase;
     margin-top: 0px;
-    margin-bottom: 46px;
-    
+    margin-bottom: 46px; 
 }
+
+.team-section,
+.text,
+.feature-section,
+.option-section,
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .text {
     background-color: var(--section-background-color);
     letter-spacing: 0.06em;
     text-align: center;
     margin-bottom: 244px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    
 }
 
 .button {
@@ -187,9 +195,7 @@ body {
 
 /* Секция преимущества */
 
-.feature-section {
-    padding-bottom: 94px;
-}
+
 .feature-section h2 {
     font-size: 36px;
     margin-top: 0px;
@@ -216,6 +222,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 10px;
     margin-top: 0px;
+    text-align: left;
 }
 
 .features-list :last-child {
@@ -236,15 +243,13 @@ body {
 .features-list li {
     width: 278px;
     margin-right: 30px;
+    width: 380px;
 }
 
 .features-list li:last-child {
     margin-right: 0px;
 }
 
-.option-section {
-    padding-bottom: 94px;
-}
 
 .option-section h2 {
     justify-content: center;
@@ -266,11 +271,16 @@ body {
     margin-bottom: 0px;
     padding-left: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .option-list li {
     margin-right: 30px;
+    width: 380px;
+}
+
+.option-list li:last-child {
+    margin-right: 0;
 }
 
 
@@ -290,10 +300,7 @@ body {
 .image {
     margin-bottom: 30px;
 }
-.team-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 
 .team-section-list {
     list-style: none;
@@ -306,16 +313,29 @@ body {
 .team-section-list li {
     background-color: var(--background-color);
     list-style: none;
+    width: 278px;
 }
 
-.team-section-list, h3, p {
+.team-section-list {
     display: flex;
     justify-content: center;
 }
-.secondary-list {
-    padding-left: 0px;
+
+.team-section-list h3,
+.team-section-list p {
     display: flex;
     justify-content: center;
+}
+
+.secondary-list {
+    display: flex;
+    padding-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+}
+
+.secondary-list li {
+    width: 20px;
 }
 
 .secondary-list .item + .item {
@@ -352,10 +372,7 @@ body {
     margin-bottom: 28px;
 }
 
-.clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .clients h2 {
     font-size: 36px;
     margin-top: 0px;
@@ -389,14 +406,15 @@ body {
 
 .div-flex {
     display: flex;
+    justify-content: space-around;
 }
 
 .first-div {
-    margin-right: 179px;
+    width: 231px;
 }
 
 .second-div {
-    margin-right: 102px;
+    width: 207px;
     list-style: none;
 }
 
@@ -445,14 +463,31 @@ color: var(--accent-color);
     text-transform: uppercase;
 }
 
+.socials-list {
+    width: 207px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.socials-list li {
+    width: 44px;
+}
+
 .second-div ul {
     list-style: none;
     display: flex;
+    padding-left: 0px;
 }
 
 .second-div p, .third-div p {
     margin-top: 0px;
     margin-bottom: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-div {
+    width: 219px;
 }
 
 .socials-list li {
@@ -480,6 +515,8 @@ color: var(--accent-color);
     margin-top: 46px;
     margin-bottom: 0px;
     padding-bottom: 21px;
+    display: flex;
+    justify-content: center;
 }
 
 .list {
